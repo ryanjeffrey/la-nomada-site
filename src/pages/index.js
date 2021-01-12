@@ -1,5 +1,19 @@
-import React from "react"
+import React from "react";
+import Lavender from "../assets/video/lavender.mp4";
 
-export default function Home() {
-  return <div>Hello world!</div>
+const Features = () => {
+  return (
+    <div className="App">
+      <video
+        autoPlay
+        loop
+        muted
+        >
+          <source src={Lavender} type="video/mp4" />
+        </video>
+        <h1>La Nomada</h1>
+    </div>
+  )
 }
+
+export default Features
